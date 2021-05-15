@@ -5,28 +5,28 @@
 class BlacksmithStandard < Formula
   desc "The Blacksmith CLI allows to manage and run Blacksmith applications."
   homepage "https://nunchi.studio/blacksmith"
-  version "0.17.0"
+  version "0.17.1"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/nunchistudio/blacksmith/releases/download/v0.17.0/blacksmith-cli-standard_v0.17.0_darwin-amd64.zip"
-    sha256 "8215c7f524c7fa9cd183b92048afaf65cc6f7d7f362f9e97d8191174d72b5901"
+    url "https://github.com/nunchistudio/blacksmith/releases/download/v0.17.1/blacksmith-cli-standard_v0.17.1_darwin-amd64.zip"
+    sha256 "f9c7fd5b251337836d42d697ccd4d889d848194c7dacc25e9472028dd1fb2f01"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/nunchistudio/blacksmith/releases/download/v0.17.0/blacksmith-cli-standard_v0.17.0_darwin-arm64.zip"
-    sha256 "8dff5661f414ea7bc21f80988fde0204bfa804f9a6b8c1aaede56e2108e85cd4"
+    url "https://github.com/nunchistudio/blacksmith/releases/download/v0.17.1/blacksmith-cli-standard_v0.17.1_darwin-arm64.zip"
+    sha256 "1da1040e021ac87903300dd7f6f7d0b6899625ef656d946ec7668d3bc754b289"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/nunchistudio/blacksmith/releases/download/v0.17.0/blacksmith-cli-standard_v0.17.0_linux-amd64.zip"
-    sha256 "2dd24e357a476fc6220f4dc85a569423b12c1fa25440c572abf347b38d26246f"
+    url "https://github.com/nunchistudio/blacksmith/releases/download/v0.17.1/blacksmith-cli-standard_v0.17.1_linux-amd64.zip"
+    sha256 "5afe2dcbef620d1e34d1eca2c2720b18a520e201523bc5738a5343bfe01c45d3"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/nunchistudio/blacksmith/releases/download/v0.17.0/blacksmith-cli-standard_v0.17.0_linux-arm.zip"
-    sha256 "2ac3d2cfe26be1de13b2fb9216ab2a0dd4a0b4ad3496f76998f3bf908158c233"
+    url "https://github.com/nunchistudio/blacksmith/releases/download/v0.17.1/blacksmith-cli-standard_v0.17.1_linux-arm.zip"
+    sha256 "68e3e2895300e2631bf2eb5c45baa7bb6b8b588f1f54821dd324463fc523a6e7"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/nunchistudio/blacksmith/releases/download/v0.17.0/blacksmith-cli-standard_v0.17.0_linux-arm64.zip"
-    sha256 "6cafbc7a4c82cdb7c053e477769578093d50704591128769b5573d47ad4cc23b"
+    url "https://github.com/nunchistudio/blacksmith/releases/download/v0.17.1/blacksmith-cli-standard_v0.17.1_linux-arm64.zip"
+    sha256 "c3eb85ed6a7747505a3253dad46b494fa2461a9225f026caeae0c0cc7ce7c21d"
   end
 
   depends_on "go" => :optional
